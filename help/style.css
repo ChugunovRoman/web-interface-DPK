@@ -1,0 +1,30 @@
+﻿body
+{
+	font-family: calibri;
+	padding-left: 20px;
+	padding-right: 25px;
+}
+a{
+	//text-decoration:none;
+	color:#000;
+	background-color: white;
+}
+a:hover
+{
+	color: #FF5555;
+	background-color: white;
+}
+a:focus
+{
+	color: #FF0000;
+	background-color: white;
+}
+p { 
+    text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+}
+figure
+{
+	text-align: center;
+	font-style: italic;
+}
