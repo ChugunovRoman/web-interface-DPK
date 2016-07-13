@@ -1,7 +1,8 @@
-﻿<?php
+<?php
 include_once("ConectToMySQL.php");
 require_once 'PHPExcel.php';
 require_once 'PHPExcel/IOFactory.php';
+require_once 'PHPExcel/Shared/XMLWriter.php';
 error_reporting( E_ERROR ); // Отключаем предупреждения (Warning)
 
 echo "<pre>";
@@ -101,8 +102,8 @@ if(!empty($_POST['ExpTable']))
 	}
 	$page->setTitle($table);
 	$objWriter = PHPExcel_IOFactory::createWriter($phpexcel, 'Excel2007');
-	$sysFilename = iconv('UTF-8', 'CP1251//IGNORE', $table);
-	$objWriter->save($sysFilename.".xlsx");
+	//$sysFilename = iconv('UTF-8', 'CP1251//IGNORE', $table); only windows
+	$objWriter->save("ExcelFiles/".$table.".xlsx");
 }
 if(!empty($_POST['TypeMethod']) and !empty($_POST['MAX_FILE_SIZE']))
 {

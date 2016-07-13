@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include_once("ConectToMySQL.php");
 /*echo "<pre>";
 print_r($_POST);*/

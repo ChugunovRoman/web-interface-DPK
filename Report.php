@@ -1,6 +1,6 @@
-﻿<head>
+<head>
 <style type="text/css">
-<?
+<?php
 if(isset($_POST['SelectAll']))
 {
 	echo "@page

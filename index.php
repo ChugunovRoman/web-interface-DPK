@@ -1,7 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-
 <?php
+//phpinfo();
+//exit;
 /*echo "<pre>";
 print_r($_POST);
 echo "</pre>";*/
@@ -11,10 +12,11 @@ echo "</pre>";*/
 //	ГБОУ СПК "Дзержинский педагогический колледж"
 //-------------------------------------------------------------------------------------------------------------------------------
 error_reporting(E_ERROR); // Отключаем предупреждения (Warning)
-mb_internal_encoding("UTF-8"); // Устанока коировки скрипта
+//mb_internal_encoding("UTF-8"); // Устанока коировки скрипта
 mysql_query("SET NAMES utf8");
 // соединяемся с сервером базы данных
-include("ConectToMySQL.php");?>
+include("ConectToMySQL.php");
+?>
 <head>	
 	<title>Преподаватели и сотрудники ДПК</title>
 	<meta charset="UTF-8">
@@ -288,8 +290,6 @@ include("ConectToMySQL.php");?>
 	</div>
 	
 	<div id="message"></div>
-<?
-	//echo "</form>";
-?>
 </body>
 </html>
+   

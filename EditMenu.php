@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // соединяемся с сервером базы данных
 include("ConectToMySQL.php");
 

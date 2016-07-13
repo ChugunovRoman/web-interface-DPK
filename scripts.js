@@ -1,4 +1,4 @@
-﻿// Функция установки рамки
+// Функция установки рамки
 function BorderReset(Obj)
 {
 	Obj.style.border = "1px inset #886";
@@ -515,7 +515,7 @@ function EditTables()
 			   }
 			 });
 			$('#editbtn').val('Редактировать');
-			setTimeout('ShowTables()', 200);
+			//setTimeout('ShowTables()', 200);
 			setTimeout('$(\'#count_rows\').val("")', 200);
 			$('#delete').removeAttr("disabled");
 			$('#count_rows').removeAttr("disabled");
@@ -653,7 +653,7 @@ function ExportToExcel()
 		 $('#container_d').html(msg);
 		 $('#message').html('<strong style="font-size: 24px;">Экспорт завершен.</strong>');
 		 setTimeout('document.getElementById("message").style.display = "none"' , 1000);
-		 document.getElementById("Save").href=$('select[name=combobox_tables] option:selected').val()+".xlsx";
+		 document.getElementById("Save").href='ExcelFiles/'+$('select[name=combobox_tables] option:selected').val()+".xlsx";
 		 setTimeout('document.getElementById("Save").click();' , 1100);
 	   }
 	});

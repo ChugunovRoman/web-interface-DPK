@@ -1,4 +1,4 @@
-﻿<?
+<?php
 // соединяемся с сервером базы данных
 include("ConectToMySQL.php");
 if(isset($_POST['SearchField']))
